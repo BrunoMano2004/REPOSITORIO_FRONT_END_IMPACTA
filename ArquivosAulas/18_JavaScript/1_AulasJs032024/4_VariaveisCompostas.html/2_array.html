@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+        const br = "<br>"
+        const hr = "<hr>"
+
+        //////////////////////////////////////////////////////
+        //Array estilo moranguinho da torta
+        //JSON - Java Script Object Notation
+        let alunos = ['Brunhara','Fabio','Fabricio','Jose','Rafael','Lucas','Thiago']
+        document.write(alunos)
+        document.write(br)
+        document.write(alunos.length)//5
+        console.log(alunos)
+        document.write(hr)
+
+        for(i=0;i <= 5 ;i++){
+            document.write(alunos[i] + br)
+        }
+
+        document.write(hr)
+        for(i=0; i< 6 ;i++){
+            document.write(alunos[i] + br)
+        }
+        document.write(hr)
+        for(i=0; i< alunos.length ;i++){
+            document.write(alunos[i] + br)
+        }
+        document.write(hr)
+        /////////////////////////////////////////////////////////////////
+        //for...in => uma variavel qquer, no exemplo variavel "x"
+        //ela receberá aquele indice
+        for(x in alunos){
+            document.write(x + " - " + alunos[x] + br)
+        }
+/////////////////////////////////////////////////////////////////
+        //for...of => uma variavel qquer, no exemplo variavel "x"
+        //ela receberá o conteudo daquele indice
+        for(x of alunos){
+            document.write(x +  br)
+        }
+ ////////////////////////////////////////////////////////////////////
+ //função de call back
+ //for....each
+ //array.map()       
+    </script>
+</body>
+</html>

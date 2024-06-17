@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+        const br = "<br>"
+        const hr = "<hr>"
+
+        //let cores = []
+        //let cores = new Array()//instanciando um objeto
+        let cores = Array()
+        cores[0]="azul"
+        cores[1]="rosa"
+        cores[2]="amarelo"
+        cores[3]="verde"
+        //cores[15]="laranja"
+        document.write(cores)
+        //alert(cores)
+        console.log(cores)
+        document.write(br)
+        document.write(cores[1])
+        document.write(br)
+        cores[1]="preto"
+        document.write(cores)
+        document.write(br)
+        document.write(cores[1])
+        document.write(br)
+        document.write(cores['length'])//nao usar
+        document.write(br)
+        document.write(cores.length)//dot syntax - que é para ser usado
+        document.write(br)
+        cores.sort()
+        document.write(cores)
+        //////////////////////////////////////////////////////////////
+        document.write(hr)
+        //orienta à objeto
+        //let carros = new Array('Toro','Gol','Strada','Jimmy','Renegade')
+        let carros = Array('Toro','Gol','Strada','Jimmy','Renegade')
+        document.write(carros)
+        console.log(carros)
+        document.write(br)
+        carros.sort()
+        document.write(carros)
+        document.write(hr)
+        //////////////////////////////////////////////////////
+        //Array estilo moranguinho da torta
+        //JSON - Java Script Object Notation
+        let alunos = ['Brunhara','Fabio','Fabricio','Jose','Rafael']
+        document.write(alunos)
+        console.log(alunos)
+        document.write(hr)
+        //////////////////////////////////////////
+        //Array multi Dimesiona
+        //let montadoras = [['Toro','Strada','Palio'],['Spin','Tracker'],['Clio','Logan','Sandero','Duster'],'honda'];
+        let montadoras = [
+                            ['Toro','Strada','Palio'],
+                            ['Spin','Tracker'],
+                            ['Clio','Logan','Sandero','Duster'],
+                            ['honda'],
+                            'Gurgel'
+                        ];
+        document.write(montadoras)
+        console.log(montadoras)
+        document.write(br)
+        document.write(montadoras[0][0])//Toro
+        document.write(br)
+        document.write(montadoras[2][1])//Logan
+        document.write(br)
+        document.write(montadoras[3][0])//honda
+        document.write(br)
+        document.write(montadoras[4])//honda
+    </script>
+</body>
+</html>

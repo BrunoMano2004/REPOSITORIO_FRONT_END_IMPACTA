@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = Number(prompt('Entre com o primeiro numero'))
+        let b = Number(prompt('Entre com o segundo numero'))
+        let c = Number(prompt('Entre com o terceiro numero'))
+
+        //if aninhado - pessimas praticas
+        if(a>b){
+            if(a>c){
+                document.write("a é o maior")
+            }else{
+                document.write("c é o maior - Ai")
+            }    
+        }else{
+            if(b>c){
+                document.write("b é o maior")
+            }else{
+                document.write("c é o maior -   OI")
+            }
+        }
+        document.write("<hr>")
+        ///////////////////////////////////////////////////////////
+        //if encadeado
+        if(a>b && a>c){
+            document.write("a é o maior")
+        }else if(b>c){
+            document.write("b é o maior")
+        }else{
+            document.write("c é o maior")
+        }
+//////////////////////////////////////////////////////////////////
+        //if sem else
+        document.write("<hr>")
+        if(a>b && a>c){
+            document.write("a é o maior")
+        }
+
+        if(b>a && b>c){
+            document.write("b é o maior")
+        }
+        
+        if(c>a && c>b){
+            document.write("c é o maior")
+        }
+//////////////////////////////////////////////////////////////////////////        
+        document.write("<hr>")
+        //entra com um numero e dizer se é par ou impar
+        let num = Number(prompt('Entre com um numero'))
+        if(num % 2 == 0){
+            document.write(`O nomero ${num} é par`)
+        }else{
+            document.write(`O nomero ${num} é impar`)
+        }
+    </script>
+</body>
+</html>

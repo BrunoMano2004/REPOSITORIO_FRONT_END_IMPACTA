@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //pedir para o usuario digita um numero entre 1 e 10
+        /*
+       let num = prompt('Digite com um numero entre 1 e 10');
+       while(num < 1 || num > 10){
+          num = prompt('Digite com um numero entre 1 e 10');
+       }*/
+
+
+       //let num = prompt('Digite com um numero entre 1 e 10');
+       do{
+          num = parseInt(prompt('Digite com um numero entre 1 e 10'));
+       }while(num < 1 || num > 10)
+
+        //calcular o fatorial desse numero
+        //5! = 5*4*3*2*1
+        //7! = 7*5*4*3*2*1
+        //n! = n * (n-1) * (n-2) * .... * 1
+        let fat = 1;
+        for(i=1;i<= num; i++){
+            fat = fat * i
+        }
+        document.write(`O fatorial de ${num} é ${fat} !!!!!!<hr>`)
+        fat = num;
+        for(i=fat-1; i>= 1; i--){ 
+            fat = fat * i
+        }
+        document.write(`O fatorial de ${num} é ${fat} !!!!!!<hr>`)
+
+    </script>
+</body>
+</html>

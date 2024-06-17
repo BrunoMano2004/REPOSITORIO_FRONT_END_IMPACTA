@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+            const br = "<br>"
+            const hr = "<hr>"
+
+        function calculaHipotenusa(a,b){  //a e b são parametros  
+            let hipotenusa
+            //a = 3;
+            //b = 4;
+            hipotenusa = Math.sqrt(Math.pow(a,2)+Math.pow(b,2))
+            document.write(hipotenusa)
+        }    
+    </script>
+</head>
+<body>
+    <script>
+        
+
+        //iremos transformar o calculo da hipotenusa numa função na proxima pagina
+
+        calculaHipotenusa(3,4)//3 e 4 são argumentos - 3 será atribuido à a e 4 será atribuido à b
+        document.write(hr)
+        ////////////////////////////////////////////////////
+        calculaHipotenusa(30,40)
+        document.write(hr)
+        ////////////////////////////////////////////////////
+        calculaHipotenusa(300,400)
+        document.write(hr)
+        ////////////////////////////////////////////////////
+        calculaHipotenusa(100,500)
+    </script>
+</body>
+</html>

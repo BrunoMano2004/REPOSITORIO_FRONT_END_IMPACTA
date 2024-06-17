@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ESCOPO GLOBAL - PODEM SER ACESSADAS POR QQUER ELEMENTO DA PAGINA
+        let resp = " Madona ";
+        var resposta = " Copacabana ";
+
+
+        //ESCOPO LOCAL DE VARIAVEL
+        //SERÁ SOMENTE ACESSIVEL PELO ELEMENTO QUE A CRIAR
+        function testarVariavel(){
+            //declara a variavel utilizando var ou let dentro da função
+            //elas terão escopo local
+            let resp = " Impacta ";
+
+            //sem declara resposta dentro da função , ela procurara fora da funçaõ
+            //var resposta = " Oscar "; 
+
+            alert(resp+resposta)
+        }
+
+        testarVariavel()
+        document.write(resp+resposta)
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de controle de Repetição</title>
+</head>
+<body>
+    
+    <script>
+        ////////////////////////////////////////////////////////
+        //REPETIÇÂO CONDICIONAL
+        //repetição condicional (while e o do...while) não precisa de uma contadora
+        //a controladora e a contadora não precisa ser a mesma variavel
+
+        //Enquanto FAÇA
+        //while....do
+        let cont=10//contadora e controladora
+        while(cont <= 3 ){
+            document.write(`${cont}, `)
+            cont++;
+        }
+
+        document.write("<hr>");
+        //(FAÇA)REPITA.....ATÈ
+        //ao menos uma vez ele executará as instruçoes do bloco
+        let conta=10//contadora e controladora
+        do{
+            document.write(`${conta}, `)
+            conta++;
+        }while(conta <= 3 )
+        
+         document.write("<hr>");
+         /////////////////////////////////////////////////////////////////
+         //repetição nao condicional
+         //iteração
+         //para
+         //for
+
+         //a cotadora e a controladora será a MESMA variavel
+         //enaqunto(while) e o repita(do...while) não precisam de uma contadora
+         //delimita uma faixa de valores
+         //PARA conto DE 1 ATÉ 3 PASSO 1 FAÇA 
+         for(conto=1;conto <= 3; conto++ ){
+                document.write(`${conto}, `)
+         }
+    </script>
+</body>
+</html>

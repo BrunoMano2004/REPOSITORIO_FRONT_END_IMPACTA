@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //restantes
+        document.write(Math.max(2,3,5,98,27,41,99,32,45) + "<hr>");
+
+        function soma(...muitosNumeros){
+            //document.write(muitosNumeros + "<br>")
+            //document.write(muitosNumeros[3] + "<br>")
+            //document.write(muitosNumeros.length + "<br>")
+            //document.write(typeof muitosNumeros+ "<br>")
+
+           // for(i=0;i<muitosNumeros.length;i++){}
+           let soma = 0
+           for(let num of muitosNumeros){
+                soma = soma + num
+           }
+           return soma
+
+        }
+
+        document.write(soma(2,3,5,98,20,30))
+    </script>
+</body>
+</html>
