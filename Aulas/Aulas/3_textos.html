@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>HTML 5 – A Nova Onda</title>
+	<style>
+		/*
+		negrito: 
+        <b> - depreciada - fisica - não semantica
+        <strong> - recomendada - "semantica" - logica
+        
+        italico
+        <i> -  depreciada - fisica - não semantica 
+         <em> - recomendada - "semantica" - logica    
+
+         <span>   
+
+
+         Propriedade display : como a caixa deve ser exibida
+
+         display:block => 100%parent dela, porem PODE SER ALTERADO O WIDTH E O HEIGHT
+         display:inline => adequar ao conteudo, ficara alinhada - "em linha" - com o antecessor e o posterior
+            e as propriedaes WIDTH E HEIGHT NAO PODEM SER ALTERADAS
+
+		*/
+        .formata{
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .caixa{
+            background-color: bisque;
+
+            border: 1px solid black;/* funcio igual para elemento de bloco e de linha*/
+            width:350px;/* nao funciona para elemento de linha*/
+            height:50px;/* nao funciona para elemento de linha*/
+            margin:50px;/* somente margin left e right para elemento de linha*/
+            padding: 20px;/*funciona tnato para elemento de bloco como de linha porem o comportamenteb para linha é caotico*/
+            box-sizing: border-box;
+        }
+        h3{
+            /* display:block;padrao para blocos*/
+            display:inline;
+        }
+        #bloco1,#bloco2{
+            /* display:inline;padrao para linhas */
+            display:block;
+        }
+	</style>
+</head>
+
+<body>
+	<p>Lorem ipsum <b>dolor</b> sit amet <strong>consectetur</strong> adipisicing elit. <br>
+    Perspiciatis <i>inventore</i> qui id, ad atque <em>praesentium</em> adipisci dolor reiciendis est similique facere repellat repudiandae aspernatur dolore quibusdam consequuntur magni quae deserunt nulla dolores rerum!<br>
+     Molestias nihil<u>excepturi</u>, magni, ipsam quos perferendis, dicta dolor <b><i><u>exercitationem</u></i></b>accusamus id? Minus, asperiores optio?</p>
+
+    <p>Officia commodi <span class="formata">pariatur vitae</span> animi tempora quidem sit eius obcaecati eaque dignissimos nisi a, voluptatum, modi deserunt <span class="formata">sequi vel veniam, nam molestias incidunt deleniti maxime? Cumque minima illo ex a aperiam consequuntur blanditiis quidem ea. Iusto ex laboriosam explicabo quasi eaque suscipit quae aut fugiat,</span> fugit enim dicta optio rerum?</p>
+
+    <p class="formata">Soluta quo omnis quia quaerat, aperiam, exercitationem cupiditate sapiente reiciendis asperiores totam atque repellat rerum inventore. Pariatur, nisi, corporis iusto ab quis commodi atque ullam necessitatibus alias nam voluptate? Dolore voluptas expedita minus doloribus perspiciatis, eos unde, earum repellat dolorem inventore ratione nisi a ducimus architecto culpa assumenda tempore illo.</p>
+
+    <p>Temporibus ab, consequatur voluptatem magnam neque illum dicta ducimus ex quidem? Dolorem velit reprehenderit enim voluptas accusantium cupiditate eveniet corporis atque, dolorum quaerat sunt inventore sapiente incidunt tenetur! Illo aspernatur aliquid nobis repellat, labore minus asperiores eius necessitatibus, pariatur unde expedita quidem sapiente. Fugiat deleniti dolore repellat non cum aspernatur.</p>
+
+    <h3 class="caixa">Leandro e Leonardo</h3>
+    <h3 class="caixa">Xitaozinho e Chororó</h3>
+    <h3 class="caixa">Zeze Di Camargo e Luciano</h3>  
+      
+    <p>Praesentium in quam <span id="bloco1" class="caixa">vitae eius</span> rem labore totam tenetur aliquam accusamus reprehenderit officiis beatae, placeat, velit asperiores tempore quisquam odit autem cupiditate optio quibusdam dicta saepe itaque minus? <span id="bloco2" class="caixa">Facere expedita</span> minima dolorem, ipsum recusandae laboriosam molestiae voluptas temporibus tenetur harum necessitatibus obcaecati ipsa, vitae atque odit nulla, eum praesentium soluta.</p>
+
+    <p>Rem quis neque sit deserunt, impedit magnam excepturi, ratione, rerum provident corrupti voluptatem iste accusamus velit quaerat eaque recusandae maiores quo animi delectus. Autem blanditiis minima quasi illo praesentium architecto reprehenderit, aliquam qui, expedita velit optio at ipsum maxime ducimus debitis a ab maiores necessitatibus veritatis. Nihil soluta explicabo autem?</p>
+
+    <p>Optio explicabo nulla, cupiditate accusamus cumque itaque voluptatibus ab officiis eligendi magni dolorum voluptas nisi, minus quia sunt dolores. Neque aut, voluptas, eligendi minima nihil obcaecati quibusdam dicta maiores nesciunt inventore molestias laborum illum provident atque nobis fuga! Facilis tempora cum possimus tempore rerum aperiam iure repellendus commodi dolor laudantium.</p>
+
+</body>
+
+</html>

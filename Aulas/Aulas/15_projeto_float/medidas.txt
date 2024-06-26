@@ -1,0 +1,3 @@
+interface largura 768px 
+header altura 80px
+nav altura 400px largura 150px

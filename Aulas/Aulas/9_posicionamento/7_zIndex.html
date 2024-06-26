@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>HTML 5 – A Nova Onda</title>
+<style type="text/css">
+	/*
+Quando os elementos são posicionados, eles podem se sobrepor a outros elementos.
+
+A z-index propriedade especifica a ordem da pilha de um elemento (qual elemento deve ser colocado na frente ou atrás dos outros).
+
+Um elemento pode ter uma ordem de empilhamento positiva ou negativa:
+	*/	
+body{
+	margin:0
+}	
+div{
+	border: 1px solid black;
+	width:300px;
+	height:300px;
+	position: absolute;
+}
+#um{
+	background-color: red;
+
+}
+#dois{
+	background-color: green;
+	top:100px;
+	left:100px;
+}
+#tres{
+	background-color: aqua;
+	top:200px;
+	left:200px;
+}
+#quatro{
+	background-color: grey;
+	top:300px;
+	left:300px;
+}
+#cinco{
+	background-color: yellow;
+	top:400px;
+	left:400px;
+	z-index: 1;
+}
+#seis{
+	background-color: brown;
+	top:350px;
+	left:250px;
+
+}
+#sete{
+	background-color: cian;
+	top:600px;
+	left:600px;
+	z-index:2;
+}
+#oito{
+	background-color: lightgrey;
+	top:700px;
+	left:700px;
+	z-index: 3;
+}
+</style>
+</head>
+<body>
+<div id="um">
+	<h1>um</h1>
+</div>
+<div id="dois">
+	<h1>dois</h1>
+</div>
+<div id="tres">
+	<h1>tres</h1>
+</div>
+<div id="quatro">
+	<h1>quatro
+</h1>
+</div>
+<div id="cinco">
+	<h1>cinco</h1>
+</div>
+<div id="seis">
+	<h1>seis</h1>
+</div>
+<div id="sete">
+	<h1>sete</h1>
+</div>
+<div id="oito">
+	<h1>oito</h1>
+</div>
+ </body>
+</html>

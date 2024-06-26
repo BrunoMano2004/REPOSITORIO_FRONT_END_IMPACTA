@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<discos>
+	<disco>
+		<titulo>Fruto Proibido</titulo>
+		<artista>Rita lee</artista>
+		<banda>Tutti Frutti</banda>
+		<ano>1975</ano>
+		<faixas>
+			<faixa num="1" tempo="3">Esse tal de Rock'n Roll</faixa>
+			<faixa num='2' tempo="4:30">Luz Del Fuego</faixa>
+			<faixa num="3" tempo="2:30">Agora só falta você</faixa>
+		</faixas>
+			
+	</disco>
+</discos>

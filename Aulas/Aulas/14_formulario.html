@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            width: 150px;
+            display: inline-block;
+            text-align: right;
+        }
+        input{
+            width:200px;
+        }
+        fieldset{
+            border: 2px rgb(0,0,0) double;
+            border-radius: 30px;
+            box-shadow: 15px 15px 15px rgb(0,0,0);
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="">
+
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+        <p>
+            <!-- Nome:<input type="text" id="nome" name="nomeUsuario" value="Joelma"> -->
+            <label for="nome" tabindex="1" autofocus>Nome do Usuario:</label>
+            <input      type="text" 
+                        id="nome" 
+                        name="nomeUsuario" 
+                        placeholder="Digite seu nome..."
+                        required
+                        maxlength="50"
+                        tabindex="2"    
+                    >
+                    <!-- no padrao XHTML tem que ser required="required"-->
+                         
+        </p>
+        <p>
+            <label for="senha" tabindex="3">Senha:</label>
+            <input type="password" id="senha" name="senha" tabindex="4">
+        </p>
+        <p>
+            <label for="email" tabindex="5">Email:</label>
+            <input type="email" id="email" name="email" tabindex="6">
+        </p>
+        <p>
+            <label for="dataNasc" tabindex="7">Data do Nascimento:</label>
+            <input  type="date" id="dataNasc" name="dataNasc" tabindex="8">
+        </p>
+    </fieldset>
+
+        <p>
+            <input type="submit">
+        </p>
+    </form>
+</body>
+</html>
