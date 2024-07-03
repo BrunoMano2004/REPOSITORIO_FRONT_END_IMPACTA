@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //restantes
+        
+
+        function pessoa(nome, sobrenome, ...quemSou){
+            document.write(nome + ' ' + sobrenome + "<br>")
+            document.write(quemSou + "<br>")
+            document.write(quemSou[3] + "<br>")
+            document.write(quemSou.length + "<br>")
+            document.write(arguments + "<br>")
+            document.write(arguments.length + "<br>")
+        }
+
+        pessoa("Edu","Pretel",'Radialista','Ator','Astrologo','Professor')
+    </script>
+</body>
+</html>

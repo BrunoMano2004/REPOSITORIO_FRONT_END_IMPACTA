@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processamento de Dados</title>
+    
+</head>
+<body>
+    
+    <script>
+        /*
+        Dado: Representação digital de uma informação do mundo real.
+        Processamento de Dados | Armazenamento de Dados - SGBDR
+
+        Entrada de Dados | Processamento de Dados | Saida de Dados
+        1 - Entrada de Dados: LEIA - (teclado, mouse, SGBDR)
+        2 - Processamento de Dados 
+        3 - Saida de Dados: ESCREVA (Impressora, tela, SGBDR)
+        */
+
+        //JavaScript - Boxes
+        //Entrada de Dados = window.prompt('mensagem')
+        let base = window.prompt('Digite o valor da Base')
+        let altura = prompt("Digte o valor da Altura")
+
+        //Processamento de Dados
+        let areaTriangulo = base*altura/2
+
+        //Saida de Dados
+        // window.alert(areaTriangulo)
+        // window.console.log(areaTriangulo)
+        // window.document.write(areaTriangulo)
+
+        alert(areaTriangulo)
+        console.log(areaTriangulo)
+        document.write("<h1>A área do triangulo é "+areaTriangulo+" unidades!!!!</h1>")
+
+        let confirma = confirm('Você quer ir à uma rave na faixa de Gaza')
+        document.write("<h2>"+typeof confirma+"</h2>")
+    </script>
+</body>
+</html>

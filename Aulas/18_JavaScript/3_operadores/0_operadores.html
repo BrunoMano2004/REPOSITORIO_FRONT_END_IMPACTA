@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        realizam operações e RETORNAM um resultado
+        */
+       ////////////////////////////////////////////////////
+       //operador de atribuição
+       //let num <- 51 // a variavel num RECEBE 51 ou 51 é ATRIBUIDO à variavel num
+
+       //o operador de atribuição =
+       let num = 51;
+       document.write(num + "<br>")//51
+       num = 658;
+       document.write(num + "<br>")//658
+
+       //acumular valores numa variavel
+       num = num + 10;
+       document.write(num + "<br>")//668
+
+       //forma reduzida => para todos os operadores aritimeticos
+       num += 10;//num = num + 10;
+       document.write(num + "<br>")//678
+
+       //incremento e decremento - altera de 1 em 1 - somente adição e subtração
+       num++;//num +=1 ou  num = num + 1
+       document.write(num + "<br>")//679
+       ++num;
+       document.write(num + "<br>")//680
+
+       num--
+       document.write(num + "<br>")//679
+       --num
+       document.write(num + "<br>")//678
+
+       ////////////////////////////////////////////////////////////////////////////////////
+        //operador de concatenação
+        let nome = "Eduardo"
+        document.write(nome + "<br>")//Eduardo
+        nome = nome + " Pretel";
+        document.write(nome + "<br>")//Eduardo Pretel
+        nome += " Filho";
+        document.write(nome + "<br>")//Eduardo Pretel Filho
+
+        //////////////////////////////////////////////////////////////////////////////
+        /*operador aritimetico
+        + adição
+        - subtração
+        * multiplicação
+        / divisão
+        % resto da divisao
+        ** potencia
+        */
+       document.write((5+3)+"<br>")
+       document.write((5-3)+"<br>")
+       document.write((5*3)+"<br>")
+       document.write((5/3)+"<br>")
+       document.write((5%3)+"<br>")
+       document.write((5**3)+"<br>")
+
+       //Objeto Math
+       document.write(Math.pow(5,3))
+       document.write("<br>")
+       document.write(Math.sqrt(25))//5
+       document.write("<br>")
+       document.write(Math.pow(25, 1/2))//5
+       document.write("<br>")
+       document.write(Math.pow(125, 1/3))//5 - raiz cubica
+       document.write("<br>")
+       document.write(125 ** (1/3))//5 - raiz cubica
+       document.write("<br>")
+       document.write(Math.round(5.3))//5
+       document.write("<br>")
+       document.write(Math.round(5.7))//6
+       document.write("<br>")
+       document.write(Math.ceil(5.3))//6
+       document.write("<br>")
+       document.write(Math.floor(5.7))//5
+       document.write("<br>")
+
+      // document.write(round(5.3))// round is not defined
+
+       ////////////////////////////////////////////////////////////
+       //operadores de comparação
+       document.write("Operadores de comparação <br>") 
+       //realizam comparação e retornam TRUE ou FALSE
+
+       let x=9;
+       document.write("Igualdade <br>") 
+       //compara valor somente - nao verifica o tipo
+       document.write(x == 5)//false
+       document.write("<br>")
+       document.write(x == 9)//true
+       document.write("<br>")
+       document.write(x == "9")//true - pois nao verifica o tipo
+       document.write("<hr>")
+
+       document.write("Identicidade <br>") 
+       //são identicos - verifica o valor e o tipo
+       document.write(x === 9)//true
+       document.write("<br>")
+       document.write(x === "9")//false
+       document.write("<hr>")
+
+        document.write("Operador de Negação <br>") 
+        //Operador de Negação é o ponto de exclamação
+        document.write(!true)//false
+       document.write("<br>")
+       document.write(!false)//true
+       document.write("<br>")
+
+       document.write("Diferença e não identicos <br>")
+        /* Devemos usar a negação 
+        diferente !=
+        nao identico !==
+        <> - nao existe
+        */
+       document.write(x != "9")//false - diferente
+       document.write("<br>")
+       document.write(x !== "9")//true - não identico
+       document.write("<hr>")
+
+       document.write("Maior ou Menor <br>")
+        /* Devemos usar a negação 
+        < - menor
+        > - maior
+        <= - menor ou igual
+        >= - maior ou igual
+
+        NÃO EXISTE => OU  =<
+        */
+        document.write(4 <= 4)//true
+        document.write("<br>")//
+        document.write(3 <= 4)//true
+        document.write("<br>")//
+        document.write(5 <= 4)//FALSE
+        document.write("<br>")//
+
+         /////////////////////////////////////////////////////////
+         document.write("OPERADORES LOGICOS <br>")
+        /* Faço mais de uma comparação e tenho apenas UM resultado - true ou false
+        */
+        document.write("OPERADORES LOGICOS AND <br>")
+        /* 
+        //AND não se usa
+        //&& utilize isso
+        //todas as comparações tem que retornar TRUE para que a expressão toda retorne TRUE
+        Basta umacompração da expressão  ser FALSE que toda a expressão retornará FALSE
+        */
+        document.write(4 <= 4 && 8 !=9)//(true && true) => (true)
+        document.write("<br>")//
+        document.write(4 != 4 && 8 !=9)//(false && true) => (false)
+        document.write("<br>")//
+        document.write(4 != 4 && 8 ==9)//(false && false) => (false)
+        document.write("<br>")//,
+        document.write(4 == 4 && 8 !=9 && "a"=="a")//(true && true && true) => (true)
+        document.write("<br>")//,
+        document.write(4 == 4 && 8 ==9 && "a"=="a")//(true && false && true) => (false)
+        document.write("<br>")//,
+
+        document.write("OPERADORES LOGICOS OR <br>")
+        /* 
+        //OR não se usa
+        // || utilize isso
+        //todas as comparações tem que retornar FALSE para que a expressão toda retorne FALSE
+        Basta uma compração da expressão  ser TRUE que toda a expressão retornará TRUE
+        */
+        document.write(4 <= 4 || 8 !=9)//(true || true) => (true)
+        document.write("<br>")//
+        document.write(4 != 4 || 8 !=9)//(false || true) => (true)
+        document.write("<br>")//
+        document.write(4 != 4 || 8 ==9)//(false || false) => (false)
+        document.write("<br>")//
+        document.write(4 != 4 || 8 == 9 || "a"=="a")//(F || F || T) (TRUE)
+        document.write("<br>")//
+
+        document.write("OPERADORES LOGICOS XOR <br>")
+        /* 
+        //XOR não se usa - Xclusive Or - Ou exclusivo - Ou único
+        // ^ utilize isso
+        //
+        Apenas uma compração da expressão  pode ser TRUE que toda a expressão retornará TRUE
+        */
+        document.write(4 <= 4 ^ 8 !=9)//(true ^ true) => (false)
+        document.write("<br>")//
+        document.write(4 != 4 ^ 8 !=9)//(false ^ true) => (true)
+        document.write("<br>")//
+        document.write(4 != 4 ^ 8 ==9)//(false ^ false) => (false)
+        document.write("<br>")//
+        document.write(4 != 4 ^ 8 != 9 ^ "a"=="a")//(F ^ T ^ T) (FALSE)
+        document.write("<br>")//
+
+        document.write("<hr>")//
+        document.write("OPERADOR TERNÁRIO")//
+        document.write("<br>")//
+
+        let saida = (3!=3)?("Verdade"):("Mentira")
+        document.write(saida)//
+        document.write("<br>")//
+
+        saida = 3 == 3 ? 'BLZ' : 'Mané!!!!' 
+        document.write(saida)
+
+        document.write("<hr>")//
+        //////////////////////////////////////////////////////////////////////////
+        let tudo = 5;
+        document.write(typeof tudo)
+        document.write("<br>")
+        tudo = 5.5;
+        document.write(typeof tudo)
+        document.write("<br>")
+        tudo = "5";
+        document.write(typeof tudo)
+        document.write("<br>")
+        tudo = true;
+        document.write(typeof tudo)
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <input type="button" id="um" value="Oi" class="formata" style="color:red;font-family: Arial;">
+    <hr>
+    <input type="button" id="dois" value="Ui" class="formata">
+    <hr>
+    <input type="button" id="tres" value="Ai" >
+    <hr>
+    <p class="formata">Paragrafo 1</p>
+    <p>Paragrafo 2</p>
+    <p>Paragrafo 3</p>
+
+    <script>
+            let botaoUm = window.document.querySelector('#um');
+            console.log(botaoUm)
+            document.write(botaoUm + "<br>")
+            document.write(botaoUm.tagName + "<br>")//input
+            document.write(botaoUm.className + "<br>")//formata
+            document.write(botaoUm.type + "<br>")//button
+            document.write(botaoUm.id + "<br>")//dois
+            document.write(botaoUm.value + "<br>")//OI
+            document.write(botaoUm.style.fontFamily + "<br>")//OI
+            document.write(botaoUm.style.color+ "<br>")//red
+
+            botaoUm.style.color='green'
+            document.write(botaoUm.style.color+ "<br>")//green
+
+            //window.document.getElementById('dois').addEventListener()
+            //window.document.getElementById('dois').addEventListener('click',()=>{})
+            window.document.querySelector('#dois').addEventListener('click',()=>{
+                    botaoUm.style.width='50%';
+                    botaoUm.style.backgroundColor='black';
+                    botaoUm.style.color='white'
+                    botaoUm.style.padding='10px'
+
+                    botaoUm.value = "Boa Noite!!!!!"
+            })
+
+            ////////////////////////////////////////
+            /*  não funciona
+            let valor = document.getElementById('tres').value
+            valor="Lady GaGa"
+            */
+            let valor = document.getElementById('tres')
+            valor.value="Lady GaGa"
+    </script>
+</body>
+</html>

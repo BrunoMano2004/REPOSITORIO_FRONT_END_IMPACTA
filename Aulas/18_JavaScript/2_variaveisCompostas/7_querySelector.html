@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <input type="button" id="um" value="Oi" class="formata" style="color:red;font-family: Arial;">
+    <hr>
+    <input type="button" id="dois" value="Ui" class="formata">
+    <hr>
+    <input type="button" id="tres" value="Ai" >
+    <hr>
+    <p class="formata">Paragrafo 1 - <strong>Joy Division</strong> - depois <em>New Order</em></p>
+    <p>Paragrafo 2</p>
+    <p>Paragrafo 3</p>
+    <script>
+        let entradas = document.querySelectorAll('input');//All trará todos os inputs
+        document.write(entradas+"<br>");//[object HTMLCollection] - Array
+        console.log(entradas)
+        document.write(entradas[0]+"<br>")//[object HTMLInputElement]
+        document.write(entradas[0].value+"<br>")//OI
+        entradas[0].value="Feriado dia 9"
+
+
+        //let paragrafoUm = document.getElementsByTagName('p')[0]
+        let paragrafoUm = document.querySelector('p')//sem All - trará somente o primeiro)
+        document.write(paragrafoUm+"<br>");//[object HTMLCollection] - Array
+        console.log(paragrafoUm)//[object HTMLParagraphElement]
+
+        document.write(paragrafoUm.innerHTML+"<br>");
+        document.write(paragrafoUm.innerText+"<br>");
+
+        //paragrafoUm.innerHTML = "Eu sou a <strong>mosca</strong> que pousou na sua sopa"
+        paragrafoUm.innerText = "Eu sou a <strong>mosca</strong> que pousou na sua sopa"
+    </script>
+</body>
+</html>

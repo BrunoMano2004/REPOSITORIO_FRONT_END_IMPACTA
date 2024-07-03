@@ -1,0 +1,9 @@
+body{
+    background-color: lightblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p{
+    color:blueviolet;
+    text-decoration: line-through solid;
+    background-color: bisque;
+}

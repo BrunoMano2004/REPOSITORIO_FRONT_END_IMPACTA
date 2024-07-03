@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Dados</title>
+</head>
+<body>
+    
+    <script>
+        let nome = "Edu"//string
+        let num1 = '98'//String
+        let qquer = `20buscar`;//string
+        let num2 = 54//number
+        let num3 = 65.2//number
+        let ativo = true;//boolean
+        let especial = false//boolean
+        const PI = 3.14//number
+        let indefinido//undefined
+
+        console.log('oi')
+        console.log(typeof(nome))//string
+        console.log(typeof num1 )//string
+        console.log(typeof qquer )//
+        console.log(typeof num2 )//
+        console.log(typeof num3 )//
+        console.log(typeof ativo )//
+        console.log(typeof especial )//
+        console.log(typeof PI )//
+        console.log(typeof indefinido )//
+        indefinido = 'Alok'
+        console.log(typeof indefinido )//
+        indefinido = 123
+        console.log(typeof indefinido )//
+        indefinido = 123.98
+        console.log(typeof indefinido )//
+        indefinido = false
+        console.log(typeof indefinido )//
+
+
+        indefinido = ''
+        console.log(typeof indefinido )//
+        indefinido = 0
+        console.log(typeof indefinido )//
+        indefinido = null
+        console.log(typeof indefinido )//
+
+        console.log("#################################################")//
+        //Conversao de tipos - Type Casting
+        let pressao = '50'
+        console.log(typeof pressao )//string
+        let pressure = parseInt(pressao)
+        console.log(typeof pressure )//Number
+        console.log(pressure )//50
+        let press = parseInt('55oiiiii')
+        console.log(typeof press )//Number
+        console.log(press )//NaN - not a number
+        console.log("#################################################")//
+
+        //deletar uma variavel
+        let carro="Jimmy"
+        var cor ="rosa"
+        const OI = 'oi'
+
+        console.log(carro )
+        delete(carro)
+        console.log(carro )//nao deletou
+
+        //A unica forma de apagar uma variavel é ela NAO ter sido criada com let, var ou const
+
+        anitta="Tatuagem"
+        console.log(anitta )
+        delete(anitta)
+        console.log(anitta )// deletou - Uncaught ReferenceError: anitta is not defined
+
+    </script>
+
+    
+</body>
+</html>

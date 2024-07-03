@@ -1,0 +1,140 @@
+/*
+MEDIA TYPE - NÃO UTIÇIZAMOS O MEDIA TYPE PARA SITES RESPONSIVOS
+
+ALL - todos os tipos
+print - impressora
+projection - projetor
+HandHell - dispositivos moveis - NÃO TE PERTENCE MAIS
+
+screen - tela - usar somente o tamanho da tela para responsividade
+
+site responsivo - somente com layout liquido - medidas em porcentagem
+tecnica: MOBILE FIRST - dispositivo movel primeiro
+*/
+
+/***********************************************************************/
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+img{
+    width:100%;
+    height:auto;
+}
+h1{
+    font-size: 1.7rem;
+    color:rgb(0, 0, 102);
+}
+h2{
+    font-size: 1.13rem;
+    color:rgb(0, 0, 102);
+}
+p{
+    font-size: .875rem;
+    text-align: justify;
+    padding:0;
+}
+/*************** MOBILE FIRST **********************/
+header.header img.logo{
+    max-width: 234px;
+}
+nav{
+margin-bottom: 2rem;
+}
+nav li{
+    border:1px solid rgb(0, 102, 153);/* #069*/
+    background-color: rgb(84, 205, 226);
+    line-height:2rem;/* 32px para desktop */
+    margin-bottom: .1rem;
+    text-align: center;
+
+    list-style-type: none;
+}
+/************ HAMBURGUINHO ******************/
+nav ul{
+    position: relative;
+}
+li#icon{
+    display:inline-block;
+    padding: 0 5%;
+    position: absolute;
+    top:0;
+    right:0;
+}
+/* nav ul.esconde li:first-child{ */
+nav ul.esconde li:not(:first-child){
+    /* background-color: red; */
+    display: none;
+}
+nav ul.mostra li:not(:first-child){
+    display: block;
+}
+/********************************************/
+nav li a,a{
+    /* background-color: red; */
+    color:rgb(0, 0, 102);
+    font-size: .94rem;
+    text-decoration: none;
+
+    display: block;
+
+}
+
+section#banner{
+    margin-bottom: 1.4rem;
+}
+article{
+    border:1px solid rgb(128, 128, 128);
+    margin-bottom: 1.4rem;
+}
+#rodape{
+    background-color: rgb(56, 145, 192);/*#3891c0*/
+    line-height: 5rem;
+}
+#rodape p{
+    text-align: center;
+}
+
+/**************************************************************************/
+/* break point   através de uma media query => media type + condição */
+
+/***** TABLET *******/
+@media only screen AND (min-width:480px){
+        nav li{
+            width: 25%;
+            float:left;
+        }
+        /**** HAMBURGUINHO ******/
+        nav ul#menu li#icon{
+            display:none;
+        }
+        nav ul#menu li:not(:first-child){
+            display :block;
+        }
+        /************************/
+        article{
+            width:47%;
+            float:left;
+        }
+        #coluna1,#coluna3{
+            margin-right: 6%;
+        }
+        #rodape{
+            clear: both;
+        }
+}
+/***** DESKTOP *******/
+@media only screen AND (min-width:768px){
+    article{
+        width:20.5%;
+    }
+    #coluna2{
+        margin-right: 6%;
+    }
+}

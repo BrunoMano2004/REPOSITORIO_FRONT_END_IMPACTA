@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write(Math.max(2,3,5,98,27,41,99,32,45) + "<hr>");
+
+        let num = [2,3,5,98,27,41,99,32,45]
+        document.write(Math.max(num) + "<hr>");
+        document.write(Math.max(num[0],num[1],num[2]) + "<hr>");
+        document.write(Math.max(...num) + "<hr>");
+
+        ///////////////////////////////////////////////////////
+        let pares = [160,24,8,32]
+        let impares = [21,35,87,11]
+        document.write(Math.max(2000,...pares,55,...impares,84) + "<hr>");
+        let todos = [2000,...pares,55,...impares,84]
+        document.write(todos + "<hr>")
+        ////////////////////////////////////////////////////////
+        let rs = 'Rolling Stones'
+        let veinhos = [...rs]
+        document.write(veinhos + "<hr>");
+        document.write(veinhos[8] + "<hr>");
+    </script>
+</body>
+</html>

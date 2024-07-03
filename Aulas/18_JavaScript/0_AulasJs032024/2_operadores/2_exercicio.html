@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Operadores</title>
+</head>
+<body>
+    <script>
+        //calculo da hipotenusa
+        //hipotenusa ao quadrado = soma dos quadrados dos catetos
+        //h² = a² + b² 
+        let a,b,h
+        a = Number(prompt('Entre com o valor para o primeiro cateto'))
+        b = Number(prompt('Entre com o valor para o segundo cateto'))
+
+        //let soma = (a**2)+(b**2)
+        //let soma = Math.pow(a,2)+Math.pow(b,2)
+        //h = Math.sqrt(soma)
+        h = Math.sqrt(Math.pow(a,2)+Math.pow(b,2))
+        document.write("O valor da hipotenusa para o triangulo de catetos: "+a+" e "+b+" é: "+h)
+        document.write("<br>");
+        //interpolação de variavel
+        //a string deve ser delimitada por crases ``
+        //a variavel estará entre chaves antecedida pelo caracter $ => ${a}
+        document.write(` O valor da hipotenusa para o triangulo de catetos: ${a} e ${b} é: ${h} `)
+        document.write("<hr>");
+        //////////////////////////////////////////////////////
+        //equação do 2º grau
+        document.write("<h2>Equação do segundo grau</h2>")
+        let a1,b1,c1,delta,raizDelta,x1,x2,saida,eq1,eq2
+        a1 = Number(prompt('Entre com o valor de a'))
+        b1 = Number(prompt('Entre com o valor de b'))
+        c1 = Number(prompt('Entre com o valor de c'))
+
+        delta = (b1**2)-(4*a1*c1)
+        raizDelta = delta ** (1/2)
+
+        x1 = (-b1 + raizDelta)/(2*a1)
+        x2 = (-b1 - raizDelta)/(2*a1)
+
+        saida = `As raizes da equação são: x1 = ${x1} e x2 = ${x2} !!!!!!`
+        document.write(saida);
+        document.write("<hr>")
+        document.write("Prova: ")
+        eq1 = a1*(x1**2) + b1*x1 + c1;//ax² + bx + c 
+        eq2 = a1*(x2**2) + b1*x2 + c1;
+        document.write(`${eq1} , ${eq2}`)
+    </script>
+</body>
+</html>

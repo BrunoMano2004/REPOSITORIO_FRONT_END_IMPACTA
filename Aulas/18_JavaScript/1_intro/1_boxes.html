@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script type="text/javascript" language="javascript">  -->
+    <script>
+        /*
+            Variaveis: espaço na memoria de trabalho onde guardo dados somente durante a execução do programa
+
+            linguagens compiladas:Variaveis devem se declaradas e é a primeira tarefa a ser feita: dizer qual é o tipo de dado (string, number, boolean) e o tamanho da variavel
+
+            linguagens interpretadas: não preciso declarar a variavel - variaveis serão iniciadas - variaveis não sao tipadas - o tipo fica relacionado ao dado que foi atribuido.
+
+            linguagens de script são interpretadas por um interpretador externo: Ex : browser contem o interpretador do JavaScript
+
+            TIPOS DE DADOS
+
+            
+            Simples=> reconheço pelo dado que está guardado na variavel:
+            String: Conjunto de carcteres, delimitado por aspas e são aifanumericos: "Edu",'eu95tu21', '35', "98",  `baralho tio`, 'true', `false`, "TRUE","FALSE"
+
+            Number: Float: 123456.789
+                    Integer:11   24   57
+
+            Boolean - TRUE FALSE
+
+
+            Compostos - Array e Objetos
+
+            ################################################################
+            Atribuição
+            num <- 98
+            variavel num recebe 98 ou  98 é atribuido(guardado)na variavel num
+            nas modernas num = 98;
+        */
+
+
+            // //Declarando variavel
+            // let num,idade,nome,curso;
+
+            // //iniciando uma variavel
+            // let dia = 28
+            // var mes = 'Junho'
+            // const ano = 2024
+
+            //alert(mes)
+
+
+            // Iniciar Variavel - Declaração variavel
+            let num,operando,resultado;
+
+            //leia = > entrada de dados
+            num = prompt('Entre com um numero')
+            operando = prompt("Entre com o segundo numero")
+
+
+            //processamento de dados
+            resultado = num * operando;
+
+            //escreva => saida de dados
+            alert("A multiplicação de "+num+" por "+operando+" é: "+resultado)
+            console.log(`A multiplicação de ${num} por ${operando} é: ${resultado}`)//interpolação de variavel: reconhecimento da variavel dento de uma string delimitada pelas crases
+
+            document.write(`<h1>A multiplicação de <em>${num}</em> por <em>${operando}</em> é: <u>${resultado}</u></h1>`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    //    criando objeto atraves do formato JSON
+
+    // let professor = {nome:"Edu",idade:63,matriculado:true}
+
+    let professor = {
+                        //propriedades
+                        nome:"Edu",
+                        idade:63,
+                        matriculado:true,
+                        descricao:{
+                            altura:1.76,
+                            peso:80,
+                            sapato:43
+                        },
+                        materias:['php','js','html'],
+
+                        //metodos
+                        reverso:function(){
+                            return "eu sou a função reverso<br>"
+                        },
+                        getNome:()=>{
+                            return "Sr "+professor.nome;
+                        }
+                    }
+    document.write(professor);
+    document.write("<br>");
+    document.write(professor.nome);
+    document.write("<br>");
+    document.write(professor.descricao.peso);
+    document.write("<br>");
+    document.write(professor.materias[1]);
+    document.write("<br>");
+    document.write(professor.reverso());
+    document.write("<br>");
+    document.write(professor.reverso);
+    document.write("<br>");
+    document.write(professor.getNome());
+
+    console.log(professor)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

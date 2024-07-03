@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function multiplica(a,b){
+            //a e b são parametros: PARAMETROS TEM ESCOPO LOCAL
+            res = a*b
+        }
+
+        //res foi iniciada dentro da função , mas não foi declarada(let ou var) portanto terá escopo GLOBAL
+
+        multiplica(30,50)
+        document.write(res)
+        document.write(a)//a is not defined
+
+    </script>
+</body>
+</html>

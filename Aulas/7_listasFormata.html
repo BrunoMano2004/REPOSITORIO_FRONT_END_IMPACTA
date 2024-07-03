@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        /* Box Model 
+        border
+
+        Margin: distancia da borda para fora - pai ou irmao
+        Padding: distancia da borda para dentro - conteudo ou filhos
+        
+        Height: display block  Adequa ao conteudo  e PODE ser mudado
+                display inline (adequar ao conteudo) e NÃO PODE ser alterado
+        Width - 
+            display block (100% do pai) e pode ser alterado
+            display inline (adequar ao conteudo) e nao pode ser alterado
+
+            
+
+        */
+        body{
+            border:1px solid blue;
+            margin: 0;
+        }
+        p#tres{
+            text-align: justify;
+            box-sizing: border-box;
+            
+            margin:20px auto;
+            width:80%;
+            padding: 20px 50px 100px 150px;
+            
+            /*
+            padding: 20px; - mesmo valor para  os 4 lados TRBL
+            padding: 20px 50px; - TB RL
+            padding: 20px 50px 100px; T RL B
+            padding: 20px 50px 100px 150px;; T R B L
+            padding-bottom: 20px;
+            */
+            border-style: solid dashed dotted double;
+            border-color: black red blue green;
+            border-width: 2px 4px 8px 16px;
+
+            box-shadow: 15px 15px 19px black;;
+
+            background-color: bisque;
+            background-clip: content-box;
+            /* background-clip: border-box; - padrao e nao precisa ser declarado 
+            background-clip: padding-box;
+            */
+        }
+		/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        /* LISTAS */
+        ul#cores{
+            background-color: bisque;
+            padding: 0;
+        }
+        ul#cores li{
+            background-color: cadetblue;
+            border: 1px solid black;
+            
+
+            list-style-position: inside;
+            
+            /*list-style-image: url('gifsPequeninos/anieyedrop.gif');*/
+            list-style-type: none;
+
+        }
+        /********************************************************/
+        /* Menu */
+        nav{
+            background-color: blueviolet;
+            border:1px solid black;
+        }
+        nav ul{
+            background-color: aquamarine;
+            margin: 0;
+            padding: 0;
+        }
+        nav li{
+            background-color: yellow;
+            border:1px solid black;
+            list-style-type: none;
+            width:25%;
+            box-sizing: border-box;
+        }
+        nav ul li a{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 7px;
+            display: block;
+            text-align: center;
+            height:30px
+        }
+        nav a:link,nav a:visited{
+            background-color: red;
+            color:black;
+            text-decoration: none;
+            transition: all 1s;
+            padding-left: 30px;
+        }
+        nav a:hover,nav a:active{
+            background-color: black;
+            color:white;
+            font-style: italic
+        }
+        /*******************************************************/
+        /* vertical */
+        nav#vertical li{
+            width:30px;
+            overflow: hidden;
+            transition: width 1s;
+            
+            box-sizing: border-box;
+        }
+        nav#vertical li:hover{
+            width:25%;
+        }
+        /*************************************************************/
+        nav#horizontal li{
+            float:left;
+        }
+</style>
+<body>
+    <p id="tres" class="impar">Quando pessoas entram em nossas vidas por uma "Estação", é porque chegou sua vez de
+		dividir, crescer e aprender. Elas trazem para você a experiência da paz, ou fazem você rir. Elas poderão
+		ensiná-lo algo que você nunca fez. Elas, geralmente, te dão uma quantidade enorme de prazer... Acredite! É real!
+		Mas somente por uma "Estação".</p>
+
+<hr>
+
+    <ul id="cores">
+        <li>Pink</li>
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+        <li>yellow</li>
+    </ul>
+
+<hr>
+
+    <nav id="vertical">
+        <ul>
+            <li><a href="http://www.uol.com.br" target="_blank">UOL</a></li>
+            <li><a href="3_textos.html">Textos</a></li>
+            <li><a href="#" onclick="alert('oi')">JavaScript</a></li>
+            <li><a href="#">Quebrado</a></li>
+        </ul>
+    </nav>
+
+<hr>
+
+    <nav id="horizontal">
+        <ul>
+            <li><a href="http://www.uol.com.br" target="_blank">UOL</a></li>
+            <li><a href="3_textos.html">Textos</a></li>
+            <li><a href="#" onclick="alert('oi')">JavaScript</a></li>
+            <li><a href="#">Quebrado</a></li>
+        </ul>
+    </nav>
+
+
+</body>
+</html>

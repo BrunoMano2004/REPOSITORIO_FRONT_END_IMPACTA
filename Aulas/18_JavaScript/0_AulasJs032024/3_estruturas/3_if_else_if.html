@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF</title>
+</head>
+<body>
+    
+    <script>
+        let nota =5;
+
+
+        if(nota >= 7){//if => se (verdadeiro) entao { instruçoes }
+            document.write('Partabens você foi Aprovado')
+        }else if(nota >=5){
+            document.write('Recuperação')
+        }else{
+                document.write('Reprovado')
+        }
+        
+        ////////////////////////////////////////////////////
+        document.write("<hr>")
+        if(nota >= 7){//if => se (verdadeiro) entao { instruçoes }
+            document.write('Partabens você foi Aprovado')
+        }
+
+        if(nota >=5 && nota < 7){
+            document.write('Recuperação')
+        }
+        
+        if(nota <5){
+                document.write('Reprovado')
+        }
+        
+        document.write("<hr> Estou depois do if")
+    </script>
+</body>
+</html>

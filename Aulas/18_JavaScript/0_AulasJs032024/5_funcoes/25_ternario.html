@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("operador Ternario <br>")
+        document.write((5 === '5')?("Verdadeiro"):("Falso"))
+        document.write("<br>")
+        let a = (5 === '5')
+                ?("Valeu")
+                :("Mané")
+        document.write(a +"<hr>")
+
+        let idade = prompt("Sua idade está indicada abaixo",13)
+        let boasVindas = (idade < 13)
+                        ?function(){alert("Olá menor de idade: "+idade)}
+                        :function(){alert("Olá maior de idade: "+idade)}
+
+        boasVindas()                
+
+    </script>
+</body>
+</html>

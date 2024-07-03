@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <script>
+       //let cores=[];
+       //let cores=Array();
+       let cores = new Array()
+       cores[0]="azul"
+       cores[1]="Rosa"
+       cores[2]='verde'
+       cores[3]='marrom'
+
+       document.write(cores)
+       document.write("<br>")
+       document.write(cores[2])//verde
+       document.write("<hr>")
+       
+
+       //objeto literal - formato JSON - JavaScriptObjectNotation
+       let alunos = ['Zenaide','Fabricio','Marco','Bruno','Nery','Pablo','Alfredo']
+        document.write(alunos)
+        document.write("<br>")
+        document.write(alunos[1])
+        document.write("<br>")
+       //sort(alunos) //1_array.html:30 Uncaught 
+       //ReferenceError: sort is not defined
+       alunos.sort()//metodo sort()
+        document.write(alunos)
+        document.write("<br>")
+        document.write(alunos.length)
+        document.write("<br>")
+        alunos.reverse()
+        document.write(alunos)
+        
+        console.log('alunos:', alunos)
+    </script>
+</body>
+</html>

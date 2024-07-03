@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict"
+        //função no JS é um valor
+        function oi(){ alert("oi") }
+        function oi(){ alert("ui") }
+        oi()
+
+        
+        let idade = prompt("Digite sua idade!!!!!",13)
+        let boasVindas
+        
+        //condicional que faz a declaração de função
+        if(idade < 13){
+            boasVindas = function (){
+                alert("Olá menor de idade: "+idade)
+            }
+            
+        }else{
+            boasVindas = function(){
+                alert("Olá maior de idade: "+idade)
+            }
+        }
+
+        boasVindas()//22_expressaoFuncoesDiferencas.html:30 Uncaught ReferenceError: boasVindas is not defined
+        //"use strict" - modo restrito
+        //declaraçao de função tem escopo local de bloco  
+        //ela será somente acessivel somente dentro daquele bloco 
+        //resplvendo essa questao nas paginas 23 e 24
+        
+
+    </script>
+</body>
+</html>

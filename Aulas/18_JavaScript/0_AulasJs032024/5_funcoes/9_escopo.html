@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //escopo de variavel é  onde a variavel está disponivel
+        //visibilidade da variavel => quem a ve
+
+        //por padrao todas a variaveis no JS tem escopo global
+        //declarada na raiz do documento
+        //Todos os elementos da pagina terão acesso à elas
+        //declarei num1 e num2 na raiz do documento
+        //elas terão escopo global
+        //podem ser acessadas e modificadas por qquer elemento da pagina 
+        let num1 =  250;
+        var num2 = 15;
+
+        //resp terá escopo GLOBAL, pois não foi declarada com LET ou VAR
+        //foi somente iniciada
+        //porem somente existirá se a função for chamada
+        function adicao(){
+            //num1 e num2 foram declaradas fora da função - na raiz do documento portanto tem  escopo global. PODEM SER ACESSADAS DENTRO DA FUNÇÃO
+            resp= num1+num2
+        }
+        adicao()
+        document.write(resp);
+    </script>
+</body>
+</html>

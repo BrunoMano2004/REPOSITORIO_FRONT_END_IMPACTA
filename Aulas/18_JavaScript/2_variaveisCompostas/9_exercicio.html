@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border:1px solid black;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <input type="password" id="entrada"><br>
+    Fundo: <input type="color" id="fundo"><br>
+    Fonte: <input type="color" id="fonte"><br>
+    <input type="button" id="botao" value="Entrar Info">
+
+    <p id="texto">Texto</p>
+
+    <script>
+       //document.querySelector('#botao').addEventListener('click',()=>{})
+       document.querySelector('#botao').addEventListener('click',()=>{
+            //leia - entrada
+            let inputEntrada = document.querySelector('#entrada')
+            let entrada = inputEntrada.value;
+            let fundo = document.querySelector('#fundo').value;
+            let fonte = document.querySelector('#fonte').value;
+
+            //escreva - saida
+            inputEntrada.value=''
+            let texto = document.getElementById('texto')
+            texto.innerHTML = entrada;
+            texto.style.color = fonte;
+            texto.style.backgroundColor = fundo;
+
+       })
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+            const br = "<br>"
+            const hr = "<hr>"
+
+        function calculaHipotenusa(a,b){  
+
+            let hipotenusa
+            hipotenusa = Math.sqrt(Math.pow(a,2)+Math.pow(b,2))
+           return hipotenusa
+        }    
+    </script>
+</head>
+<body>
+    <script>
+        
+
+        //iremos transformar o calculo da hipotenusa numa função na proxima pagina
+
+        let ret = calculaHipotenusa(3,4)
+        document.write(ret)
+        document.write(hr)
+        ////////////////////////////////////////////////////
+        document.write(calculaHipotenusa(30,40))
+        document.write(hr)
+        ////////////////////////////////////////////////////
+        alert(calculaHipotenusa(300,400))
+        document.write(hr)
+        ////////////////////////////////////////////////////
+        console.log(calculaHipotenusa(100,500))
+        document.write(hr)
+        ////////////////////////////////////////////////////
+        document.write(calculaHipotenusa(parseInt(calculaHipotenusa(8,9)),calculaHipotenusa(30,40)))
+        document.write(br)
+        document.write(calculaHipotenusa(parseInt(12.041594578792296),calculaHipotenusa(30,40)))
+        document.write(br)
+        document.write(calculaHipotenusa(12,50))
+        document.write(br)
+        document.write(51.419840528729765)
+    </script>
+</body>
+</html>

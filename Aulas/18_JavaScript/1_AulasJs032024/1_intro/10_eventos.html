@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientação à eventos</title>
+</head>
+<body>
+    
+        
+        <input id="um" type="button" value="Over - Eu sou obstrutivo" onmouseover="alert('oi')"><br><br>
+        <button id="dois" onmouseout="primeira(25,32)">Out - Eu sou obstrutivo</button><hr>
+        <button id="tres">Click - Não Obstrutivo</button><hr>
+        <button id="quatro">Duplo Click - Não Obstrutivo</button><hr>
+
+        <button id="cinco">Click - Não Obs - function anonima</button><hr>
+        <button id="seis">Duplo Click - Não Obs - Arrow function</button><hr>
+
+    <hr>
+    <script>
+        function primeira(num1,num2){
+            let res = num1+num2
+            console.log(res)
+        }
+        function segunda(){
+            console.log('Eu sou o tres e Me clickaram')
+        }
+        /////////////////////////////////////////////////
+        //Nao Obstrutivo
+        window.document.getElementById('tres').onclick = segunda;//nome fumção
+
+        document.getElementById('quatro').ondblclick = function(){
+            primeira(200,300)
+        }
+
+        document.getElementById('cinco').onclick = function(){
+            num1 = 25
+            num2 = 4
+            let res = num1 * num2 
+            console.log(res)
+        }
+
+
+        //arrow function
+        document.getElementById('seis').ondblclick = ()=>{
+            num1 = 250
+            num2 = 40
+            let res = num1 * num2 
+            console.log(res)
+        }
+    </script>
+</body>
+</html>

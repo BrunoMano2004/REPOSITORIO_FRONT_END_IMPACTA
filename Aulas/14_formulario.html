@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        label {
+            width: 150px;
+            display: inline-block;
+            text-align: right;
+        }
+
+        fieldset {
+            border: 2px rgb(0, 0, 0) double;
+            border-radius: 30px;
+            box-shadow: 15px 15px 15px rgb(0, 0, 0);
+            margin: 50px;
+        }
+
+        @media only print{
+            #botoes,img{
+                display: none;
+            }
+            fieldset{
+                box-shadow: none;
+                border-style: solid;
+                border-width: .5px;
+                border-color: gray;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="catalogos/dicionario/f_010p.jpg" alt="">
+    </div>
+    <form action="http://www.edupretel.com.br/html/mensagem.php" method="POST">
+
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <p>
+                <!-- Nome:<input type="text" id="nome" name="nomeUsuario" value="Joelma"> -->
+                <label for="nome" tabindex="1" autofocus>Nome do Usuario:</label>
+                <input type="text" id="nome" name="nomeUsuario" placeholder="Digite seu nome..." required maxlength="50"
+                    tabindex="2">
+                <!-- no padrao XHTML tem que ser required="required"-->
+
+            </p>
+            <p>
+                <label for="senha" tabindex="3">Senha:</label>
+                <input type="password" id="senha" name="senha" tabindex="4">
+            </p>
+            <p>
+                <label for="email" tabindex="5">Email:</label>
+                <input type="email" id="email" name="email" tabindex="6">
+            </p>
+            <p>
+                <label for="dataNasc" tabindex="7">Data do Nascimento:</label>
+                <input type="date" id="dataNasc" name="dataNasc" tabindex="8">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Listas</legend>
+            <p>
+                <label for="ufNasc">Estado Nascimento</label>
+                <select name="estadoNascimento" id="ufNasc">
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="pr">Paraná</option>
+                    <option value="pa" selected>Pará</option>
+                    <option value="ba">Bahia</option>
+                    <option value="go">Goiás</option>
+                </select>
+            </p>
+            <p>
+                Sexo:<br>
+                <input type="radio" name="sexo" id="sexo_m" value="M" checked><label for="sexo_m">Masculino</label><br>
+                <input type="radio" name="sexo" id="sexo_f" value="F"><label for="sexo_f">Feminino</label><br>
+            </p>
+            <p>
+                Idiomas<br>
+                <input type="checkbox" name="idiomas[]" id="idi_ing" value="ing"><label for="idi_ing">Inglês</label>
+                <br>
+                <input type="checkbox" name="idiomas[]" id="idi_esp" value="esp"><label
+                    for="idi_esp">Espanhol</label><br>
+                <input type="checkbox" name="idiomas[]" id="idi_ita" value="ita"><label
+                    for="idi_ita">Italiano</label><br>
+                <input type="checkbox" name="idiomas[]" id="idi_fra" value="fra"><label for="idi_fra">Frances</label>
+            </p>
+            <p>
+                <input type="checkbox" name="li" id="li"><label for="li">Li e aceito o Contrato</label>
+            </p>
+        </fieldset>
+
+        <input type="hidden" name="recipient" value="edu@edupretel.com.br">
+        <input type="hidden" name="subject" value="A tatoo da Anita inflamou">
+        <input type="hidden" name="redirect" value="obrigado.html">
+
+
+
+        <fieldset id="botoes">
+            <legend>Botoes</legend>
+            <p>
+                <!--
+        <input type="submit" name="enviar" id="enviar" value="Mandar as info"> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="limpar" type="reset" value="Limpar o Formulário"> 
+        <input id="nada" type="button" value="Nao faço nada">
+    -->
+                <button type="submit">Enviar Formulario</button>
+                <button type="reset">Limpar Formulario</button>
+                <button type="button" style="background-color: bisque;"
+                    ondblclick="javascript:alert('Boa Noite Leonardo')">Não faço nada</button>
+                <button type="button" onclick="window.print()">Imprimir</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

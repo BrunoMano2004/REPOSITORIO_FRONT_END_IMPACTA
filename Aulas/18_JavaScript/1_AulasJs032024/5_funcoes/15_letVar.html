@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //diferença entre let e var
+        let nota = 8
+        //let nota = 9; - let so pode ser usado uma vez em cada escopo
+        var notas = 8;
+        var notas = 9;//var pode ser usado mais de uma vez no mesmo escopo
+        console.log(notas)
+
+        if(nota > 7){
+            let nota = 1000;
+            alert(`Nota dentro do if: ${nota}`)//1000
+            var notas = 1000;//Notas continua com escopo GLOBAL
+            console.log(notas)
+        }
+
+            alert(`Nota fora do if: ${nota}`)//8
+            console.log(notas)
+
+        /////////////////////////////////////////////////////////
+        document.write("<hr>")
+        let nome="Edu"
+        function mostraNome(){
+            let nome = "Lucas"
+            if(true){
+                let nome = "Impacta"
+                document.write(`Nome dentro do if: ${nome}<hr>`)
+            }
+            document.write(`Nome fora do if porem dentro da função: ${nome}<hr>`)
+        }
+        mostraNome()
+        document.write(`Nome fora da função: ${nome}<hr>`)
+    </script>
+</body>
+</html>

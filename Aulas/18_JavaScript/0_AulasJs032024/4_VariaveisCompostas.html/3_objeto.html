@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto</title>
+</head>
+<body>
+    <script>
+        const br = "<br>"
+        const hr = "<hr>"
+        //planta de uma casa
+        //modelo para criar mias de uma variavel
+
+        //a class descreve uma variavel bem como uma planta descreve uma casa
+        class Cursos{
+            //prpriedades
+            prog
+            db
+            marcacao = 'HTML'
+            estilo = 'CSS'
+
+            //metodos
+            primeira(n1,n2){
+                return n1 + n2
+            }
+
+
+        }
+
+        //utilizar o construtor de objeto para criar a variavel Object
+        //a palavra new é o construtor de objetos
+        let curso = new Cursos
+        console.log(curso) 
+        //alert(curso) 
+        document.write(curso) 
+        document.write(br) 
+        document.write(curso['marcacao'])//nao é utilizado 
+        document.write(br)
+        document.write(curso.marcacao) //dot sintaxe
+        document.write(br)
+        curso.marcacao = 'XML'
+        document.write(curso.marcacao) //dot sintaxe
+        document.write(br)
+        curso.prog = 'PHP'
+        curso.db = 'MySql'
+        console.log(curso)
+
+        let curso2 = new Cursos
+        console.log(curso2)
+         document.write(br)
+         curso2.prog = "JavaScript"
+         curso2.db = 'Mongo'
+         console.log(curso2)
+
+         document.write(hr)
+        //primeira()//Uncaught ReferenceError: primeira is not defined
+        let a = curso.primeira(7,7)
+        document.write(a)
+        document.write(br)
+        document.write(curso2.primeira(120,80))
+    </script>
+</body>
+</html>

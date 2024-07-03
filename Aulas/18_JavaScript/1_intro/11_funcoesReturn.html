@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function multiplica(num1,num2){
+            resp = num1* num2
+            return resp
+        }
+        /* função nao ocnversa com o usuario, ao menos que seja sua responsabilidade - 10funcoes.html
+
+        função tem responsabilidade UNICA
+
+        função não dá saida , retorna coisas - 11_funcoesReturn.hml
+        */
+    </script>
+</head>
+<body>
+    <script>
+        let a = multiplica(25,2)
+        document.write(a)
+    </script>
+    <hr>
+    <script>
+        let x = prompt('Entre com o primeiro numero')
+        let y = prompt('Entre com o segundo numero')
+        console.log(multiplica(x,y))
+    </script>
+    <hr>
+    <script>
+        alert(multiplica(prompt('Entre com o primeiro numero'),prompt('Entre com o segundo numero')))
+    </script>
+    <hr>
+</body>
+</html>

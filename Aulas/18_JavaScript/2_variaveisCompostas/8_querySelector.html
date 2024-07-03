@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <input type="button" id="um" value="Oi" class="formata" style="color:red;font-family: Arial;">
+    <hr>
+    <input type="button" id="dois" value="Ui" class="formata">
+    <hr>
+    <input type="button" id="tres" value="Ai" >
+    <hr>
+    <p class="formata">Paragrafo 1</p>
+    <p>Paragrafo 2</p>
+    <p>Paragrafo 3</p>
+    <script>
+        let formata = document.querySelectorAll('.formata');//Array 
+        console.log(formata)
+        document.write(formata+"<br>")
+
+        document.write(formata[0]+"<br>")//[object HTMLInputElement]
+        document.write(formata[1]+"<br>")//[object HTMLInputElement]
+        document.write(formata[2]+"<br>")//[object HTMLParagraphElement]
+
+        document.write(formata[0].tagName+"<br>")
+        document.write(formata[1].tagName+"<br>")
+        document.write(formata[2].tagName+"<br>")
+
+        let inputUm = document.querySelector('.formata');//primeiro elemento que tem a classe formata
+        document.write(inputUm.id+"<br>")//um
+    </script>
+</body>
+</html>

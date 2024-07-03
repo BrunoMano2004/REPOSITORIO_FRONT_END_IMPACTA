@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Variaveis</title>
+</head>
+<body>
+    <h1>Estudo de Variaveis</h1>
+    <hr>
+
+
+
+    <script>
+        /*
+        Variaveis:espaço na memoria de trabalho onde os dados sao armazenados durante a execução do programa
+
+        linguagens compiladas: variaveis devem ser declaradas e é primeira coisa a ser feita
+        dar um identificador(nome), 
+        o tipo de dado (string(caracteres) , number, boolean)
+        e o tamanho maximo para este dado
+
+        linguagem interpretada: são interpretadas por um interpretador(programa) externo: HTML, CSS, JavaScript, PHP, ASP....
+        NÃO SE DECLARA VARIAVEIS (SÓ POR PADRAO DEVEM SER DECLARADAS)
+        Elas não serão tipadas, ou seja, alem de trocar o conteudo, pode ser trocado o tipo de dados
+        O tipo de dado NÃO ESTÁ RELACIONADO À vARIAVEL(espaço na memoria), mas ao seu conteudo.
+        Eu posso alterar o tipo da variavel durante a execução do programa
+
+        Tipos de Dados: Simples ou Compostos
+
+        - Simples: Reconhecido pelo proprio dado
+        String: Dado Alfanumerico - conjunto de caracteres delimitados por Aspas simples, Aspas duplas ou crases
+        'Edu' "Pretel" `Filho`
+        '98' "125" `307` "true" 'false'
+
+        Number:Float(123456.789)   Integer(25    987)
+
+        Boolean: True False
+
+        - Compostos: Reconhecido pela estrutura da variavel
+        Array(no JavaScript o Array é um Object)
+        Object
+
+        O mesmo se faz para CONSTANTES: Mesmo que variaveis, porem não pode ter seu conteudo alterado durante a execução do programa
+
+        #############################################################
+        REGRAS PARA NOMES DE VARIAVEIS E CONSTANTES
+        - Não pode começãr com numeros
+        - Pode conter numeros, letras e o caracter $
+        - Não pode conter outro caracter especial que não seja o $
+        - Nao pode ter espaços em branco
+        - É sensitive case
+
+        data_cadastro
+        dataCadastro => camel Case
+        */
+
+        //nao se declara variaveis, mas posso fazer por boas praticas
+        let dataNasc, dataMudanca, nomePai
+        var nota1, nota2, media
+        //constante não é declarada , é iniciada
+        const XI = 'xung'
+        //XI = "xang"//Uncaught SyntaxError: Identifier 'dataNasc' has already been declared (at 3_variaveis.html:63:13)
+
+
+        //let dataNasc = '1960-09-18' - nao posso usar o let para a mesma variavel duas vezes - Uncaught SyntaxError: Identifier 'dataNasc' has already been declared (at 3_variaveis.html:63:13)
+
+        dataNasc = '2024-02-27'
+        nota1=8
+
+        let base,altura
+        base = 20
+        altura=5
+
+        let area = base * altura
+
+        alert(area)
+
+        //h e H são duas variaveis diferentes
+        let h = 5;
+        let H = 10;
+
+    </script>
+</body>
+</html>

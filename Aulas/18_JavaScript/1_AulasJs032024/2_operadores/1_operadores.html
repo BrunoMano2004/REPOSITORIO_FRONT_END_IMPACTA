@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        OPERADORES
+        realizam operações e RETORNAM um resultado
+        */
+       ///////////////////////////////////////////////////
+       //operadores de atribuição
+       //let num <- 51; //a variavel num recebe o valor 51 ou que o valor 51  é atribuido à variavel num
+       //o operador de atribuição é o sinal de igual
+        let num = 51;
+        document.write(num+"<br>")//51
+        
+        num = 658;
+        document.write(num + "<br>")//658
+
+        //acumular valores 
+        num = num + 10
+        document.write(num + "<br>")//668
+        //forma reduzida de acumular valores
+        num += 10;//num = num + 10
+        document.write(num + "<br>")//678
+        
+        //incremento e decremento - altera o conteudo da variavel de 1 em 1 para cima ou para baixo - somente adição e subtração
+        num++;//num = num +1 // 679 - pre-incrementar
+        document.write(num + "<br>")//679
+        ++num;//num = num +1 // 680 - pos-incrementar
+        document.write(num + "<br>")//680
+        num--;////num = num -1 // 679 - pre-decrementar
+        document.write(num + "<br>")//679
+        --num;////num = num -1 // 678- pos-decrementar
+        document.write(num + "<hr>")//678
+        /////////////////////////////////////////////////////////////////////
+        //provando pre e pos
+        document.write(num++ + "<br>")//imprimiu 678 e depois incrementou num = 679
+        document.write(num + "<hr>")//679
+
+        document.write(++num + "<br>")//incrementou para 680 e depois imprimiu 680 
+        document.write(num + "<hr>")//680
+        document.write(num + "<hr>")//680
+        
+        ///////////////////////////////////////////////////////////
+        //Operador de Concatenação - operador de Strings
+        let nome = "Eduardo "
+        document.write(nome + "<br>")
+        nome = nome + "Pretel "
+        document.write(nome + "<br>")
+        nome += "Filho"// nome = nome + "Filho"
+        document.write(nome + "<br>")
+
+        let = jogo = "Mortal"+" "+"Kombat"
+        document.write(jogo + "<hr>")
+
+        //////////////////////////////////////////////////////////////
+        /*
+        Operadores Aritimeticos
+        + adição
+        - subtração
+        * multiplicação
+        / divisao
+        % resto de divisao
+        ** potencia
+        */
+        document.write((5+3) + "<br>")
+        document.write((5-3) + "<br>")
+        document.write((5*3) + "<br>")
+        document.write((5/3) + "<br>")
+        document.write((5%3) + "<br>")
+        document.write((5**3) + "<br>")
+
+        //Objeto Math
+        document.write(Math.pow(5,3))
+        document.write("<br>")
+        document.write(Math.sqrt(25))
+        document.write("<br>")
+        document.write(Math.pow(25,1/2))
+        document.write("<br>")
+        //outras raizes
+        document.write(Math.pow(125,1/3))
+        document.write("<br>")
+        document.write(125**(1/3))
+        document.write("<br>")
+        document.write(Math.ceil(4.2));
+        document.write("<br>")
+        document.write(Math.round(4.2));//4
+        document.write("<br>")
+        document.write(Math.round(4.7));//5
+        document.write("<br>")
+        document.write(Math.floor(4.7));//4
+
+        document.write("<br>")
+        //document.write(ceil(4.7));// ceil is not defined
+        document.write(Math.min(0, 150, 30, 20, -8, -200));
+
+        document.write("<hr>")
+        //##############################################################
+        //Conversao de tipos - Type Casting
+        document.write((5+3) + "<br>")//8
+        document.write(("5"+"3") + "<br>")//53
+        document.write(("5"+3) + "<br>")//53 - Converterá 3 numerico em "3" String - CONVERSÃO IMPLICITA
+        document.write(("5"+String(3)) + "<br>")//53 - Converterá 3 numerico em "3" String - CONVERSÃO EXPLICITA
+
+        //CONVERSAO EXPLICITA PARA NUMEROS
+        document.write((Number("5")+3) + "<br>")//8
+        document.write((Number.parseInt("5")+3) + "<br>")//8
+        document.write((parseInt("5")+3) + "<br>")//8
+
+        document.write((Number("20buscar")) + "<br>")//NaN
+        document.write((parseInt("20buscar")) + "<br>")//20
+        document.write((parseInt("buscar20")) + "<br>")//NaN
+
+
+        document.write("<hr>")
+        //##############################################################
+        document.write("Operadores de Comparação")
+        //comparam 2 valores apenas e retornam TRUE ou FALSE
+
+        let x = 9;
+        document.write("Igualdade <br>")
+        //Igualdade compara somente o valor - nao verifica o tipo
+        document.write(x == 5)//false
+        document.write("<br>")//
+        document.write(x == 9)//true
+        document.write("<br>")//
+        document.write(x == "9")//true - verifica somente o valor - nao verifica o tipo
+        document.write("<br>")//
+
+        document.write("Identicidade <br>")
+        //se são identicos - verifica o valor e o tipo
+        document.write(x === "9")//false - verificao valor e o tipo
+        document.write("<br>")//
+        document.write(x === 9)//true - verificao valor e o tipo
+        document.write("<br>")//
+
+        document.write("Operador de negação <br>")
+        //operador de negação é o ponto de exclamação - "!"
+        document.write(!false)//true 
+        document.write("<br>")//
+        document.write(!true)//false
+        document.write("<br>")//
+
+
+        document.write("Diferença e não identicos <br>")
+        /* Devemos usar a negação 
+        diferente !=
+        nao identico !==
+        <> - nao existe
+        */
+        document.write(x != 9)//false  - diferente
+        document.write("<br>")//
+        document.write(9 !== 9)//false  - não identicos
+        document.write("<br>")//
+        document.write(9 !== "9")//true  - não identicos
+        document.write("<br>")//
+
+        document.write("Maior ou Menor <br>")
+        /* Devemos usar a negação 
+        < - menor
+        > - maior
+        <= - menor ou igual
+        >= - maior ou igual
+
+        NÃO EXISTE => OU  =<
+        */
+        document.write(4 <= 4)//true
+        document.write("<br>")//
+        document.write(3 <= 4)//true
+        document.write("<br>")//
+        document.write(5 <= 4)//FALSE
+        document.write("<br>")//
+
+        /////////////////////////////////////////////////////////
+        document.write("OPERADORES LOGICOS <br>")
+        /* Faço mais de uma comparação e tenho apenas UM resultado - true ou false
+        */
+        document.write("OPERADORES LOGICOS AND <br>")
+        /* 
+        //AND não se usa
+        //&& utilize isso
+        //todas as comparações tem que retornar TRUE para que a expressão toda retorne TRUE
+        Basta umacompração da expressão  ser FALSE que toda a expressão retornará FALSE
+        */
+        document.write(4 <= 4 && 8 !=9)//(true && true) => (true)
+        document.write("<br>")//
+        document.write(4 != 4 && 8 !=9)//(false && true) => (false)
+        document.write("<br>")//
+        document.write(4 != 4 && 8 ==9)//(false && false) => (false)
+        document.write("<br>")//
+        document.write(4 == 4 && 8 !=9 && "a"=="a")//(true && true && true) => (true)
+        document.write("<br>")//
+        document.write(4 == 4 && 8 == 9 && "a"=="a")// (false)
+        document.write("<br>")//
+
+
+        document.write("OPERADORES LOGICOS OR <br>")
+        /* 
+        //OR não se usa
+        // || utilize isso
+        //todas as comparações tem que retornar FALSE para que a expressão toda retorne FALSE
+        Basta uma compração da expressão  ser TRUE que toda a expressão retornará TRUE
+        */
+        document.write(4 <= 4 || 8 !=9)//(true || true) => (true)
+        document.write("<br>")//
+        document.write(4 != 4 || 8 !=9)//(false || true) => (true)
+        document.write("<br>")//
+        document.write(4 != 4 || 8 ==9)//(false || false) => (false)
+        document.write("<br>")//
+        document.write(4 != 4 || 8 ==9 || "a"!="a")//(FALSE && FALSE && FALSE) => (FALSE)
+        document.write("<br>")//
+        document.write(4 != 4 || 8 == 9 || "a"=="a")//(F || F || T) (TRUE)
+        document.write("<br>")//
+
+        document.write("OPERADORES LOGICOS XOR <br>")
+        /* 
+        //XOR não se usa - Xclusive Or - Ou exclusivo - Ou único
+        // ^ utilize isso
+        //
+        Apenas uma compração da expressão  pode ser TRUE que toda a expressão retornará TRUE
+        */
+        document.write(4 <= 4 ^ 8 !=9)//(true ^ true) => (false)
+        document.write("<br>")//
+        document.write(4 != 4 ^ 8 !=9)//(false ^ true) => (true)
+        document.write("<br>")//
+        document.write(4 != 4 ^ 8 ==9)//(false ^ false) => (false)
+        document.write("<br>")//
+        document.write(4 != 4 ^ 8 ==9 ^ "a"=="a")//(FALSE && FALSE && TRUE) => (TRUE)
+        document.write("<br>")//
+        document.write(4 != 4 ^ 8 != 9 ^ "a"=="a")//(F ^ T ^ T) (FALSE)
+        document.write("<br>")//
+
+        document.write("<hr>")//
+        document.write("Tabela Verdade")//
+        /*
+        p1  p2  AND OR  XOR
+        V   V   V   V   F
+        V   F   F   V   V
+        F   V   F   V   V
+        F   F   F   F   F
+        */
+
+        document.write("<hr>")//
+        document.write("OPERADOR TERNÁRIO")//
+
+        document.write("<br>")//
+        let saida = (3 != 3)?('Verdadeiro'):('Mentira')
+        document.write(saida)
+
+        document.write("<br>")//
+        saida = 3 == 3 ? 'BLZ' : 'Mané!!!!' 
+        document.write(saida)
+
+        document.write("<br>")//
+        saida =     3 == 4  ? 'Jóia' 
+                            : 'Furado!!!!' 
+        document.write(saida)
+
+        document.write("<br>")//
+        saida =     3 == 4  ? 5 
+                            : 10000000 
+                            
+        document.write(saida)
+    </script>
+</body>
+</html>

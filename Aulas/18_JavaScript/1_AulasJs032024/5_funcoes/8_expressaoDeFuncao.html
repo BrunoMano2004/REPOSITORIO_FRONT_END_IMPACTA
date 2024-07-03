@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expressão de função</title>
+</head>
+<body>
+    <script>
+        document.write(multiplica(3,5))//posso chamar antes de declarar
+
+
+        //declaração de função
+        //todas as declarações de funções serão lidas antes do processamento do documento, portanto posso chama-la antes de daclarar
+        function multiplica(a,b){
+            return a*b
+        }
+        
+
+        document.write("<hr>")
+        ////////////////////////////////////////////////
+        //expressao de função
+        //por estar do çado direito do sinal de atribuição, somente será carregada quando o processador passar por ela
+        //a chamada a esta função tem que acontecer apos a expressao ser processada
+        let multiplicando = function(a,b){
+            return a*b
+        }
+        document.write(multiplicando(30,50))
+        //guardei uma copia da função multiplica na variavel multiplicando
+
+    </script>
+</body>
+</html>

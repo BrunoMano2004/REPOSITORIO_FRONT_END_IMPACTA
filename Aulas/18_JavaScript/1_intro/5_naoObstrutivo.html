@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculaIdade(){
+            let ano,idade;
+            ano = window.prompt("Entre com o ano de seu nascimento")//entrada
+            idade=2024-ano;
+            window.console.log(`A sua idade em 2024 sera ${idade}`)
+            //window.document.write(`<p>A sua idade em 2024 sera ${idade}</p>`)
+            window.alert(`A sua idade em 2024 sera ${idade}`)
+        }
+
+        // window.document.getElementById('um').onclick = calculaIdade;
+    //     Uncaught TypeError: Cannot set properties of null (setting 'onclick')
+    // at 5_naoObstrutivo.html:17:54
+    //essa instrução somente funciona depois qu o elemento existir
+    </script>
+</head>
+<body>
+   <button type="button" id="um">Clique</button>
+   <button type="button" id="dois">Duplo Clique</button>
+   <button type="button" id="tres">Rato Fora</button>
+   
+
+   <script>
+             window.document.getElementById('um').onclick = calculaIdade;
+
+            document.getElementById('dois').ondblclick = function(){
+                     calculaIdade()
+            }
+
+
+            document.getElementById('tres').ondblclick = function(){
+                    let ano,idade;
+                    ano = window.prompt("Entre com o ano de seu nascimento")//entrada
+                    idade=2024-ano;
+                    window.console.log(`A sua idade em 2024 sera ${idade}`)
+                    //window.document.write(`<p>A sua idade em 2024 sera ${idade}</p>`)
+                    window.alert(`A sua idade em 2024 sera ${idade}`)
+            }
+    </script>
+</body>
+
+</html>
